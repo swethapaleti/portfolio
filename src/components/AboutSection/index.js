@@ -22,14 +22,14 @@ const AboutSection = () => (
             rel="noreferrer"
             href="https://www.github.com/swethapaleti"
           >
-            <i className="fa-brands fa-github mx-2 text-xl"></i>
+            <i className="fa-brands fa-github mx-2 text-xl transform transition duration-500 hover:scale-110 hover:text-pink-500 ease-in-out"></i>
           </a>
           <a
             target="_blank"
             rel="noreferrer"
             href="https://www.linkedin.com/in/swethapaleti"
           >
-            <i className="fa-brands fa-linkedin text-xl"></i>
+            <i className="fa-brands fa-linkedin text-xl transform transition duration-500 hover:scale-110 hover:text-pink-500 ease-in-out"></i>
           </a>
         </span>
       </p>

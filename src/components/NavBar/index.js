@@ -38,9 +38,9 @@ class NavBar extends Component {
 
   render() {
     const { isMenuClosed, useWhiteBackground } = this.state;
-    const whiteBgClass = useWhiteBackground ? "bg-white shadow-lg" : "";
+    const whiteBgClass = useWhiteBackground ? "bg-white shadow-lg" : "bg-[#ffd6d6]";
     return (
-      <nav className={`fixed top-0 w-full ${whiteBgClass}`}>
+      <nav className={`fixed top-0 w-full ${whiteBgClass} z-50`}>
         <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
           <div className="relative flex h-16 items-center justify-between">
             <div className="absolute inset-y-0 right-0 flex items-center sm:hidden">
@@ -52,7 +52,7 @@ class NavBar extends Component {
                 aria-expanded="false"
               >
                 <span className="sr-only">Open main menu</span>
-                {isMenuClosed && (
+                {!isMenuClosed && (
                   <svg
                     className="h-8 w-8 stroke-pink-600"
                     fill="none"
@@ -67,7 +67,7 @@ class NavBar extends Component {
                     />
                   </svg>
                 )}
-                {!isMenuClosed && (
+                {isMenuClosed && (
                   <svg
                     className="h-8 w-8 stroke-pink-600"
                     fill="none"
@@ -120,7 +120,7 @@ class NavBar extends Component {
                         Contact
                       </a>
                       <a
-                        href="https://www.example.com"
+                        href="Resume.pdf" target="_blank"
                         className="bg-gradient-to-r from-[#ffbd84] to-[#ff1f8e] text-white rounded-full p-3 px-4 text-sm font-semibold shadow-xl"
                       >
                         Download CV
@@ -155,7 +155,7 @@ class NavBar extends Component {
                 Contact
               </a>
               <a
-                href="https://www.google.com"
+                href="Resume.pdf" target="_blank"
                 className="bg-gray-900 text-gray-300 hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium"
               >
                 Download CV
