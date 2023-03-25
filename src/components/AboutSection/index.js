@@ -35,7 +35,7 @@ const AboutSection = () => (
       </p>
     </div>
     <div>
-      <h1 className="text-3xl font-semibold my-2 text-center">Skills</h1>
+      <h1 className="text-3xl font-semibold my-4 md:my-2 text-center">Skills</h1>
       <div className="grid grid-cols-3 gap-8">
         <img
           alt="svgImg"
