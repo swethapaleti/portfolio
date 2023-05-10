@@ -6,6 +6,12 @@ html {
   scroll-behavior: smooth;
 }
 
+#about,
+#projects,
+#contact {
+  scroll-margin: 50px;
+}
+
 ::-webkit-scrollbar {
   width: 6px;
 }
