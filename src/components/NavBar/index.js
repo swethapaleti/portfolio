@@ -100,20 +100,20 @@ class NavBar extends Component {
                     <div className="flex space-x-4">
                       <a
                         href="#about"
-                        className="hover:border-b hover:border-pink-600 text-black px-3 py-2 text-base font-medium"
+                        className="hover:text-pink-600 transition-colors duration-700 text-black px-3 py-2 text-base font-medium"
                         aria-current="page"
                       >
                         About
                       </a>
                       <a
                         href="#projects"
-                        className="hover:border-b hover:border-pink-600 text-black px-3 py-2 text-base font-medium"
+                        className="transition-colors duration-700 hover:text-pink-600 text-black px-3 py-2 text-base font-medium"
                       >
                         Projects
                       </a>
                       <a
                         href="#contact"
-                        className="hover:border-b hover:border-pink-600 text-black px-3 py-2 text-base font-medium"
+                        className="transition-colors duration-700 hover:text-pink-600 text-black px-3 py-2 text-base font-medium"
                       >
                         Contact
                       </a>
