@@ -1,7 +1,5 @@
 import { Component } from "react";
 
-const NAVBAR_SWITCH_THRESHOLD = 200;
-
 class NavBar extends Component {
   state = {
     isMenuClosed: false,
@@ -17,7 +15,7 @@ class NavBar extends Component {
 
   switchBackgroundIfNeeded = () => {
     const { useWhiteBackground } = this.state;
-    if (window.scrollY >= NAVBAR_SWITCH_THRESHOLD) {
+    if (window.scrollY >= 200) {
       if (!useWhiteBackground) {
         this.setState({ useWhiteBackground: true });
       }
@@ -38,9 +36,9 @@ class NavBar extends Component {
 
   render() {
     const { isMenuClosed, useWhiteBackground } = this.state;
-    const whiteBgClass = useWhiteBackground ? "bg-white shadow-lg" : "bg-[#ffd6d6]";
+    const whiteBgClass = useWhiteBackground ? "bg-white shadow-lg py-2" : "bg-[#ffd6d6] py-6";
     return (
-      <nav className={`fixed top-0 w-full ${whiteBgClass} z-50`}>
+      <nav className={`fixed top-0 w-full transition-all duration-500 ${whiteBgClass} z-50`}>
         <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
           <div className="relative flex h-16 items-center justify-between">
             <div className="absolute inset-y-0 right-0 flex items-center sm:hidden">
