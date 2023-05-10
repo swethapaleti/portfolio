@@ -12,11 +12,11 @@ const ProjectCard = (props) => {
             {name}
           </h5>
         </a>
-        <div className="flex w-full justify-between">
+        <div className="flex w-full justify-between border-box">
           <a
             href={liveUrl}
             target="_blank"
-            className="hover:text-pink-600 hover:border-2 hover:border-pink-600 bg-gradient-to-r from-[#ffbd84] to-[#ff1f8e] text-white rounded-full p-3 px-4 text-sm font-semibold shadow-xl hover:bg-gradient-to-r hover:from-white hover:to-white"
+            className="hover:text-pink-600 hover:border-2 place-self-start hover:border-pink-600 bg-gradient-to-r from-[#ffbd84] to-[#ff1f8e] text-white rounded-full p-3 px-4 text-sm font-semibold shadow-xl hover:bg-gradient-to-r hover:from-white hover:to-white"
             rel="noreferrer"
           >
             View Project
@@ -24,7 +24,7 @@ const ProjectCard = (props) => {
           <a
             href={githubUrl}
             target="_blank"
-            className="text-pink-600 border-2 hover:border-none border-pink-600 hover:from-[#ffbd84] hover:to-[#ff1f8e] hover:text-white rounded-full p-3 px-4 text-sm font-semibold shadow-xl bg-gradient-to-r from-white to-white"
+            className="text-pink-600 border-2 place-self-start hover:border-none border-pink-600 hover:from-[#ffbd84] hover:to-[#ff1f8e] hover:text-white rounded-full p-3 px-4 text-sm font-semibold shadow-xl bg-gradient-to-r from-white to-white"
             rel="noreferrer"
           >
             View Code
